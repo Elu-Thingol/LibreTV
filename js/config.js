@@ -52,18 +52,24 @@ const API_SITES = {
         api: 'https://json.heimuer.xyz/api.php/provide/vod',
         name: '黑木耳',
         detail: 'https://heimuer.tv', 
-    }    zy360: {
-        api: 'https://360zy.com/api.php/provide/vod'        name: '360资源'    },
+    },
+    zy360: {
+        api: 'https://360zy.com/api.php/provide/vod',
+        name: '360资源',
+    },
     iqiyi: {
         api: 'https://www.iqiyizyapi.com/api.php/provide/vod',
-        name: 'iqiyi资源'    }    wolong: {
+        name: 'iqiyi资源',
+    },
+    wolong: {
         api: 'https://wolongzyw.com/api.php/provide/vod',
         name: '卧龙资源',
     }, 
     hwba: {
         api: 'https://cjhwba.com/api.php/provide/vod',
         name: '华为吧资源',
-    }    jisu: {
+    },
+    jisu: {
         api: 'https://jszyapi.com/api.php/provide/vod',
         name: '极速资源',
         detail: 'https://jszyapi.com', 
@@ -71,7 +77,8 @@ const API_SITES = {
     dbzy: {
         api: 'https://dbzy.tv/api.php/provide/vod',
         name: '豆瓣资源',
-    }    mozhua: {
+    },
+    mozhua: {
         api: 'https://mozhuazy.com/api.php/provide/vod',
         name: '魔爪资源',
     },
@@ -106,7 +113,7 @@ const API_SITES = {
     lzi: {
         api: 'https://cj.lziapi.com/api.php/provide/vod/',
         name: '量子资源站'
-    }
+    },
     //ARCHIVE https://telegra.ph/APIs-08-12
 };
 
@@ -143,7 +150,7 @@ const API_CONFIG = {
     },
     detail: {
         // 只拼接参数部分
-        path: '?ac=videolist&ids='，
+        path: '?ac=videolist&ids=',
         headers: {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
             'Accept': 'application/json'
@@ -163,10 +170,10 @@ const PLAYER_CONFIG = {
     allowFullscreen: true,
     width: '100%',
     height: '600',
-    timeout: 15000，  // 播放器加载超时时间
+    timeout: 15000,  // 播放器加载超时时间
     filterAds: true,  // 是否启用广告过滤
-    autoPlayNext: true，  // 默认启用自动连播功能
-    adFilteringEnabled: true， // 默认开启分片广告过滤
+    autoPlayNext: true,  // 默认启用自动连播功能
+    adFilteringEnabled: true, // 默认开启分片广告过滤
     adFilteringStorage: 'adFilteringEnabled' // 存储广告过滤设置的键名
 };
 
