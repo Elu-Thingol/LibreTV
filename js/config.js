@@ -113,17 +113,17 @@ const API_SITES = {
     lzi: {
         api: 'https://cj.lziapi.com/api.php/provide/vod/',
         name: '量子资源站'
-    },
+    }
     //ARCHIVE https://telegra.ph/APIs-08-12
 };
 
 // 定义合并方法
 function extendAPISites(newSites) {
-    Object。assign(API_SITES， newSites);
+    Object.assign(API_SITES, newSites);
 }
 
 // 暴露到全局
-window。API_SITES = API_SITES;
+window.API_SITES = API_SITES;
 window.extendAPISites = extendAPISites;
 
 
@@ -131,7 +131,7 @@ window.extendAPISites = extendAPISites;
 const AGGREGATED_SEARCH_CONFIG = {
     enabled: true,             // 是否启用聚合搜索
     timeout: 8000,            // 单个源超时时间（毫秒）
-    maxResults: 10000，          // 最大结果数量
+    maxResults: 10000,          // 最大结果数量
     parallelRequests: true,   // 是否并行请求所有源
     showSourceBadges: true    // 是否显示来源徽章
 };
